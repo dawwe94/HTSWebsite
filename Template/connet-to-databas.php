@@ -19,5 +19,5 @@ echo $temp["Name"];
 }
 
 mysql_close($link);
-?>
 
+?>

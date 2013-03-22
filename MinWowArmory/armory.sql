@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Värd: 127.0.0.1
--- Skapad: 29 jan 2013 kl 12:15
+-- Skapad: 15 mars 2013 kl 14:32
 -- Serverversion: 5.5.27-log
 -- PHP-version: 5.4.6
 
@@ -34,15 +34,17 @@ CREATE TABLE IF NOT EXISTS `armory` (
   `Proffesion` text NOT NULL,
   `Proffesion Level` text NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumpning av Data i tabell `armory`
 --
 
 INSERT INTO `armory` (`Id`, `Name`, `Level`, `Class`, `Proffesion`, `Proffesion Level`) VALUES
-(1, 'Odish', 87, 'Frost - Death Knight', 'Jewelcrafting/Mining', ''),
-(2, 'Frillex', 90, 'Frost - Mage', 'Tailoring/Herbalism', '597/600');
+(1, 'Odish', 90, 'Frost - Death Knight', 'Jewelcrafting/Mining', '600/600'),
+(2, 'Frillex', 90, 'Frost - Mage', 'Tailoring/Engeneering', '600/262'),
+(3, 'Sombero', 90, 'Restoration - Druid', 'Jewelcrafting/Mining ', '303/325'),
+(4, 'Thuryz', 40, 'Shadow - Priest', '', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

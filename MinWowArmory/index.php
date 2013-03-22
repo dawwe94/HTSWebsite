@@ -6,7 +6,7 @@ include 'connection.php';
 <title>Min Armory</title>
 <link rel="stylesheet" type="text/css" href="css.css">
 </head>
-<body background="bakgrund.jpg">
+<body>
 <!-- En punkt lista. -->
 <?php
 $query = mysql_query("Select * FROM armory");

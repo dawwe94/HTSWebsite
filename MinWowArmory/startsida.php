@@ -9,9 +9,15 @@ include 'connection.php';
 <body background="bakgrund.jpg">
 
 
-<FORM>
-<INPUT Type="BUTTON" VALUE="Armory" ONCLICK="window.location.href='http://localhost/Armory/MinWowArmory/Armory.php'">
-</FORM>
+				<form action="login.php" method="post">
+<h2>Användarnamn: </h2><input type="text" name="username"> <br />
+<h2>Lösenord: </h2><input type="password" name="password"> <br />
+<input type="submit" Name ="Submit1" Value = "Logga in!">
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p>
+&copy; 2013 David Jönsson
+</p>
 
 </body>
 </html>

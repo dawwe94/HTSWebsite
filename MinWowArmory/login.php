@@ -13,7 +13,7 @@
 			  header('Location: http://localhost/Armory/MinWowArmory/Armory.php');
 		 }
 		 else {
-			  header('Location: login.html');
+			  header('Location: startsida.php');
 		 }
 		
 ?>

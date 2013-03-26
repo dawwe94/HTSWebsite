@@ -1,12 +1,18 @@
 <?php
+session_start();
+if(!isset($_SESSION['session_user'])){
+	header('Location: login.php');
+}
+?>
+<?php
 include 'connection.php';
 ?>
 <head>
 <title>Min Armory</title>
 <link rel="stylesheet" type="text/css" href="david.css">
 </head>
-
-<div class="Character">
+<Body background="armory.jpg">
+<div class="armory">
 <?php
 $query = mysql_query("Select * FROM armory");
 while ($temp = mysql_fetch_array ($query)) {	
@@ -19,7 +25,6 @@ echo "<br />";
 echo $temp["Proffesion"];
 echo "<br />";
 echo $temp["Proffesion Level"];
-echo "<br />";
 $Frillex=$temp["Name"];
 echo "
 <FORM>
@@ -27,10 +32,13 @@ echo "
 </FORM>
 ";
 
-
 }
 mysql_close($link);
 ?>
+</br>
+<form action="logout.php" method="post">
+<input type="submit" Name ="Submit2" Value = "Logga ut!">
+</form>
 </div>
 
 </body>

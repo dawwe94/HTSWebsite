@@ -1,4 +1,4 @@
-ï»¿<!-- Kom ihÃ¥g att logga in till databasen fÃ¶rst! -->
+<!-- Kom ihåg att logga in till databasen först! -->
 <?php
         include '../MinWowArmory/connection.php';
 		

@@ -4,21 +4,23 @@ include 'connection.php';
 ?>
 <head>
 <title>Min Armory</title>
-<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" type="text/css" href="david.css">
 </head>
 <body background="bakgrund.jpg">
-<!-- En punkt lista. -->
-<?php
-$query = mysql_query("Select * FROM armory");
-while ($temp = mysql_fetch_array ($query)) {
-echo $temp["Name"];
-}
-mysql_close($link);
-?>
 
-<FORM>
-<INPUT Type="BUTTON" VALUE="Armory" ONCLICK="window.location.href='file:///H:/HTSWebsite/MinWowArmory/startsida.html'"> 
-</FORM>
+
+				<form action="login.php" method="post">
+<h2>Användarnamn: </h2><input type="text" name="username"> <br />
+<h2>Lösenord: </h2><input type="password" name="password"> <br /><br />
+<input type="submit" Name ="Submit1" Value = "Logga in!"> 
+
+<form action="registrera.php" method="post"> <br /><br />
+<input type="submit" Name ="Submit2" Value = "Registrera">
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p>
+&copy; 2013 David Jönsson
+</p>
 
 </body>
 </html>

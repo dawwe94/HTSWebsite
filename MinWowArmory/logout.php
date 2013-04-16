@@ -2,6 +2,6 @@
     session_start();
     session_unset();
     
-    header("Location: startsida.php");
+    header("Location: index.html");
     die;
 ?> 

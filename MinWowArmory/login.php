@@ -12,7 +12,7 @@
 		      $_SESSION['session_user']=$_POST[username];
 			  header('Location: Armory.php');
 		 }
-		 else {
+		  else {
 			  header('Location: index.html');
 		 }
 		

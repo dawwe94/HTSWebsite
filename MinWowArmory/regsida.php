@@ -4,7 +4,7 @@
              
 		
          $query = "INSERT INTO `users`(`username`, `password`, `email`) VALUES ('$_POST[username]','$_POST[password]','$_POST[email]')";
-		echo $querry;
+		echo $query;
 		
 		 $result = mysql_query($query);
         

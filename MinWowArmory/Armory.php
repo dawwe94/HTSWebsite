@@ -9,9 +9,22 @@ include 'connection.php';
 ?>
 <head>
 <title>Min Armory</title>
+
+ <meta  http-equiv="Content-Type" content="text/html;  charset=iso-8859-1"> 
+ <title>Search  Contacts</title> 
+ 
 <link rel="stylesheet" type="text/css" href="david.css">
 </head>
 <Body background="armory.jpg">
+</br>
+</br>
+<form  method="post" action="search.php"  id="searchform"> 
+<input  type="text" name="name"> 
+<input  type="submit" name="submit" value="Search"> 
+</form> 
+</br>
+</br>
+</br>
 <div class="armory">
 <?php
 $query = mysql_query("Select * FROM armory");

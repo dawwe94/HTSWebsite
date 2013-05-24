@@ -23,3 +23,10 @@ h2{
 color: White;
 }
 
+#Länk2{
+color: Blue;
+}
+
+#Länk2:visited {
+color: White;
+}

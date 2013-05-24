@@ -10,7 +10,7 @@ include 'connection.php';
 <head>
 <title>Min Armory</title>
 
- <meta  http-equiv="Content-Type" content="text/html;  charset=iso-8859-1"> 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>Search  Contacts</title> 
  
 <link rel="stylesheet" type="text/css" href="david.css">
@@ -23,25 +23,26 @@ include 'connection.php';
 <input  type="submit" name="submit" value="Search"> 
 </form> 
 </br>
-</br>
-</br>
 <div class="armory">
 <?php
 $query = mysql_query("Select * FROM armory");
 while ($temp = mysql_fetch_array ($query)) {	
-echo $temp["Name"];
+echo $temp["name"];
 echo "<br />";
-echo $temp["Level"];
+echo $temp["level"];
 echo "<br />";
-echo $temp["Class"];
+echo $temp["class"];
 echo "<br />";
-echo $temp["Proffesion"];
+echo $temp["profession"];
 echo "<br />";
-echo $temp["Proffesion Level"];
-$Frillex=$temp["Name"];
+echo $temp["professionlevel"];
+echo "<br />";
+
+//echo "<a href=".$temp['armory'].">Armory</a>";
+$Frillex=$temp["name"];
 echo "
 <FORM>
-<INPUT Type='BUTTON' VALUE='$temp[Name]' ONCLICK='window.location.href=\"$temp[url]\"' /> 
+<INPUT Type='BUTTON' VALUE='$temp[name]' ONCLICK='window.location.href=\"$temp[url]\"' /> 
 </FORM>
 ";
 

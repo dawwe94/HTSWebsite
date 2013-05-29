@@ -1,5 +1,7 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
 <?php
+$password = $_POST['password'];
+$md5_password = md5($password);
 include 'connection.php';
 ?>
 <head>

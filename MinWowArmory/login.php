@@ -1,8 +1,9 @@
 ﻿<!-- Kom ihåg att logga in till databasen först! -->
 <?php
         include '../MinWowArmory/connection.php';
-		
-         $query = "SELECT * FROM users WHERE username='$_POST[username]' AND password='$_POST[password]';";
+		$password = $_POST['password'];
+		$md5_password = md5($password);
+         $query = "SELECT * FROM users WHERE username='$_POST[username]' AND password='$md5_password';";
          echo '<em> ' . $query . ' </em>';
          $result = mysql_query($query);
 		 session_start();

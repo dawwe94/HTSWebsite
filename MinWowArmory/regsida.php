@@ -6,8 +6,9 @@
 		 echo ("Detta användarnamn finns redan i databasen! Välj ett nytt!");
 		 }
 		 else
-		
-		$query = "INSERT INTO `users`(`username`, `password`, `email`) VALUES ('$_POST[username]','$_POST[password]','$_POST[email]')";
+		$password = $_POST['password'];
+		$md5_password = md5($password);
+		$query = "INSERT INTO `users`(`username`, `password`, `email`) VALUES ('$_POST[username]','$md5_password','$_POST[email]')";
 		
 		 
 		echo $query;

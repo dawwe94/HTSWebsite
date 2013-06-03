@@ -11,19 +11,19 @@ include 'connection.php';
 <title>Min Armory</title>
 
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <title>Search  Contacts</title> 
  
 <link rel="stylesheet" type="text/css" href="david.css">
 </head>
 <Body background="armory.jpg">
 </br>
-</br>
-<form  method="post" action="search.php"  id="searchform"> 
-<input  type="text" name="name"> 
-<input  type="submit" name="submit" value="Search"> 
-</form> 
-</br>
 <div class="armory">
+<form action="search.php" method="post">  
+S&ouml;k: <input type="text" name="term" /> 
+<input type="submit" value="S&ouml;k" />  
+</form>  
+
+</br>
+
 <?php
 $query = mysql_query("Select * FROM armory");
 while ($temp = mysql_fetch_array ($query)) {	

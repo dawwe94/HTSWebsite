@@ -2,12 +2,12 @@
 	include 'connection.php';
 		if(isset($_POST["username"]) and $_POST["password"] and $_POST["email"] and $_POST["name"] and $_POST["level"] and $_POST["class"] and $_POST["profession"] and $_POST["professionlevel"] and $_POST["url"]){
          
-		 if ($numrows1>0) {
+		$password = $_POST['password'];
+		$md5_password = md5($password);
+		if ($numrows>0) {
 		 echo ("Detta användarnamn finns redan i databasen! Välj ett nytt!");
 		 }
 		 else
-		$password = $_POST['password'];
-		$md5_password = md5($password);
 		$query = "INSERT INTO `users`(`username`, `password`, `email`) VALUES ('$_POST[username]','$md5_password','$_POST[email]')";
 		
 		 
